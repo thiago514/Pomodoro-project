@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="themer">Themer</button>
+    <h2 id="titulo"></h2>
+    <section class="center-page">
+        <h1>Timer</h1>
+        <div class="tempos">
+            <div>
+                <p>Tempo Percorrido</p>
+                <p class="cronometro" id="tempoReal">00:00:00</p>
+            </div>
+            <div>
+                <p>Definição de Tempo</p>
+                <p class="cronometro" id="tempoCiclo">00:25:00</p>
+                <div class="div-buttons">
+                    <button class="button-up" id="aumentaCiclo"><img src="icons/up-svgrepo-com.svg" alt="" class="icons"></button>
+                    <button id="diminuiCiclo"><img src="icons/down-svgrepo-com.svg" alt="" class="icons"></button>
+                </div>    
+                
+                
+            </div>
+        </div>
+        <div class="div-intervalo-controller">
+            <div>
+                <div>
+                    <p>Tempo de Intervalo</p>
+                    <p class="cronometro" id="tempoIntervalo">00:05:00</p>
+                </div>
+                <div class="div-buttons">
+                    <button class="button-up" id="aumentarInervalo"><img src="icons/up-svgrepo-com.svg" alt="" class="icons"></button>
+                    <button id="diminuiIntervalo"><img src="icons/down-svgrepo-com.svg" alt="" class="icons"></button>
+                </div>    
+            </div>
+            <div class="bottons-controler">
+                <div class="div-buttons">
+                    <button id="start"><img src="icons/pause-svgrepo-com.svg" alt="" class="controllers"></button>
+                    <button id="stop"><img src="icons/stop-svgrepo-com.svg" alt="" class="controllers"></button>
+                </div>  
+                
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+    <audio src="sounds/mixkit-alarm-tone-996.wav" id="alarmSound"></audio>
+</body>
+</html>
